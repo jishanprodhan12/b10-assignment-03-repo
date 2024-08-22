@@ -26,82 +26,141 @@
 </head>
 <body>
     
-  <!-- header  -->
-   <header class="container mx-auto">
-    <!-- nav  -->
-     <nav>
-      <div class="navbar bg-base-100 flex-col md:flex-row">
-        <div class="navbar justify-between md:justify-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost order-2  lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
+  <!-- header wraper start -->
+   <section class=" bg-base-200 2xl:container mx-auto ">
+    <header class="container mx-auto">
+      <!-- nav start -->
+       <nav>
+        <div class="navbar bg-[#F4F4F4] flex-col md:flex-row">
+          <div class="navbar justify-between md:justify-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost order-2  lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
-            </ul>
+            <a class=" text-2xl font-bold order-1 flex gap-1"> <span class="bg-arow-primary rounded-full w-8 h-8 -rotate-45 flex justify-center items-center "><i class="fa-solid fa-arrow-right"></i></span>Rinterio </a>
           </div>
-          <a class=" text-2xl font-bold order-1 flex gap-1"> <span class="bg-arow-primary rounded-full w-8 h-8 -rotate-45 flex justify-center items-center "><i class="fa-solid fa-arrow-right"></i></span>Rinterio </a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 text-pera-text">
-                  <li class="font-bold text-[#494949]"><a>Home</a></li>
-                  <li><a>Services</a></li>
-                  <li><a>Portfolio</a></li>
-                  <li><a>Blogs</a></li>
-                  <li><a>Contact Us</a></li>
-                
-           </ul>
-        </div>
-        <div class="navbar-end flex  justify-evenly items-center min-w-[340px]  hidden md:flex">
-          <a href="" class="w-10 h-10 rounded-full bg-white  shadow-lg flex justify-center items-center"><i class="fa-solid fa-magnifying-glass"></i></a>
-          <a href="" class="w-10 h-10 rounded-full bg-white shadow-lg flex justify-center items-center "><i class="fa-solid fa-cart-shopping "></i></a>
-          <a class="btn rounded-xl font-bold bg-arow-primary">Book Consult <span class="w-8 h-8 rounded-full bg-black text-white -rotate-45 flex justify-center items-center"><i class="fa-solid fa-arrow-right "></i></span></a>
-        </div>
-      </div> 
-     </nav>
-     <!-- hero banner  -->
-      <section>
-        <div class="hero  min-h-screen">
-          <div class="hero-content flex-col">
-            <img
-              src="./assets/banner.png"
-              class="max-w-sm rounded-lg " />
-            <div>
-              <h1 class="text-3xl  md:text-5xl font-bold text-center">A barn house of this design has a <br> striking appearance</h1>
-              <p class="py-6 text-center">
-                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
-              </p>
-            <!-- btn wraper -->
-             <div class="md:w-fit mx-auto">
-              <button class="btn w-full md:w-[200px]  bg-lime-200 text-black font-bold rounded-2xl">
-                View Details 
-                <span class="bg-arow-primary rounded-full w-8 h-8 -rotate-45 flex justify-center items-center shadow-lg "><i class="fa-solid fa-arrow-right "></i></span></button>
-             </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-pera-text">
+                    <li class="font-bold text-[#494949]"><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  
+             </ul>
+          </div>
+          <div class="navbar-end flex  justify-evenly items-center min-w-[340px]  hidden md:flex">
+            <a href="" class="w-10 h-10 rounded-full bg-white  shadow-lg flex justify-center items-center"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="" class="w-10 h-10 rounded-full bg-white shadow-lg flex justify-center items-center "><i class="fa-solid fa-cart-shopping "></i></a>
+            <a class="btn rounded-xl font-bold bg-arow-primary">Book Consult <span class="w-8 h-8 rounded-full bg-black text-white -rotate-45 flex justify-center items-center"><i class="fa-solid fa-arrow-right "></i></span></a>
+          </div>
+        </div> 
+       </nav>
+       <!-- !nav end  -->
+       <!-- hero banner start  -->
+          <section class="hero ">
+            <div class="hero-content flex-col">
+              <img
+                src="./assets/banner.png"
+                class="max-w-sm rounded-lg " />
+              <div>
+                <h1 class="text-3xl  md:text-5xl font-bold text-center">A barn house of this design has a <br> striking appearance</h1>
+                <p class="py-6 text-center text-sm text-pera-text">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+              <!-- btn wraper -->
+               <div class="md:w-fit mx-auto">
+                <button class="btn w-full md:w-[200px]  bg-lime-200 text-black font-bold rounded-2xl">
+                  View Details 
+                  <span class="bg-arow-primary rounded-full w-8 h-8 -rotate-45 flex justify-center items-center shadow-lg "><i class="fa-solid fa-arrow-right "></i></span></button>
+               </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-   </header>
+        </section>
+        <!--! hero banner end  -->
+     </header>
+     <!--todo header end  -->
+   </section>
+  <!--! header wraper end  -->
    <!-- main  -->
-    <main>
-
+    <main >
+      <!-- We design thoughtful section start  -->
+       <section  class="bg-base-200 2xl:container mx-auto py-4 md:py-8">
+        <div class="hero container mx-auto relative  ">
+          <div class="absolute lg:-top-10  left-0 hidden lg:block  2xl:hide">
+            <img src="./assets/Vector.png" alt="" class="">
+          </div>
+          <br>
+          <div class="hero-content flex-col-reverse lg:flex-row-reverse">
+            <img
+              src="./assets/Rectangle.png"
+              class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+              <!-- btn wraper for sm decive  -->
+               <div class="w-fit mx-auto  lg:mx-0">
+                <button class="btn shadow-2xl bg-slate-50 btn-sm rounded-2xl"><span><i class="fa-solid fa-arrow-right"></i></span>About Us</button>
+               </div>
+             <!--! btn wraper end  -->
+              <h1 class="text-3xl md:text-5xl font-bold text-center lg:text-left">We design thoughtful, <br>
+               liveable spaces</h1>
+              <p class="py-6 text-center lg:text-left md:w-5/6 text-sm text-pera-text">
+                The barn house captivates with its blend of rustic charm and 
+                modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+              <!-- card container  -->
+               <div class="grid md:grid-cols-2 lg:grid-cols-1 gap-3 lg:gap-5 place-content-center">
+                <!--! card 1 -->
+                  <div class="flex justify-evenly items-center md:w-4/5 gap-6 bg-slate-50 shadow-md p-3 rounded-2xl">
+                    <!-- card img  -->
+                     <div class="w-14 h-14">
+                      <img src="./assets/commercial.png" alt="commerciral" class="w-full h-full">
+                     </div>
+                     <!-- card text  -->
+                      <div>
+                        <h4 class="font-bold">Commercial</h4>
+                       <p class="text-sm text-pera-text"> The barn house captivates with its blend of rustic charm and modern.</p>
+                      </div>
+                  </div>
+                  <!--! card 2 -->
+                  <div class="flex justify-evenly items-center md:w-4/5 gap-6 bg-slate-50 shadow-md p-3 rounded-2xl">
+                    <!-- card img  -->
+                     <div class="w-14 h-14">
+                      <img src="./assets/residential.png" alt="residential" class="w-full h-full">
+                     </div>
+                     <!-- card text  -->
+                      <div>
+                        <h4 class="font-bold">Residential</h4>
+                       <p class="text-sm text-pera-text"> The barn house captivates with its blend of rustic charm and modern.</p>
+                      </div>
+                  </div>
+                  <!-- card 2 end  -->
+               </div>
+            </div>
+          </div>
+        </div>
+       </section>
+      <!--! We design thoughtful section end  -->
     </main>
     <!-- footer  -->
      <footer>
