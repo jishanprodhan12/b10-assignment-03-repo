@@ -9,6 +9,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- js config  -->
     <script>
         tailwind.config = {
@@ -23,12 +27,18 @@
           }
         }
       </script>
+      <!-- css style  -->
+     <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+      }
+     </style>
 </head>
-<body>
+<body class="font-manrope">
     
   <!-- header wraper start -->
-   <section class=" bg-base-200 2xl:container mx-auto ">
-    <header class="container mx-auto">
+   <header class=" bg-base-200 2xl:container mx-auto ">
+    <section class="container mx-auto">
       <!-- nav start -->
        <nav>
         <div class="navbar bg-[#F4F4F4] flex-col md:flex-row">
@@ -99,9 +109,9 @@
             </div>
         </section>
         <!--! hero banner end  -->
-     </header>
+      </section>
      <!--todo header end  -->
-   </section>
+    </header>
   <!--! header wraper end  -->
    <!-- main  -->
     <main >
@@ -162,7 +172,6 @@
        </section>
       <!--! We design thoughtful section end  -->
       <!-- Our Works Process start  -->
-
        <section class="bg-base-200 2xl:container mx-auto py-4 md:py-8">
         <div class="hero container mx-auto ">
           <div class="hero-content text-center flex-col">
@@ -178,7 +187,7 @@
              <!-- card container -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-content-center gap-5 w-fit">
             <!-- card 1 start  -->
-            <div class="card bg-pink-200 md:w-60 shadow-xl">
+            <div class="card bg-pink-200 md:w-60 shadow-sm">
               <div class="card-body">
                 <icon>
                   <img src="./assets/concept.png" alt="" class="">
@@ -190,7 +199,7 @@
             </div>
             <!--! card 1 end  -->
             <!-- card 2 start  -->
-            <div class="card bg-amber-300 md:w-60 shadow-xl">
+            <div class="card bg-amber-300 md:w-60 shadow-sm">
               <div class="card-body">
                 <icon>
                   <img src="./assets/flow-chart.png" alt="" class="">
@@ -202,7 +211,7 @@
             </div>
             <!--! card 2 end  -->
             <!-- card 3 start  -->
-            <div class="card bg-emerald-300 md:w-60 shadow-xl">
+            <div class="card bg-emerald-300 md:w-60 shadow-sm">
               <div class="card-body">
                 <icon>
                   <img src="./assets/vision.png" alt="" class="">
@@ -214,7 +223,7 @@
             </div>
             <!--! card 3 end  -->
             <!-- card 4 start  -->
-            <div class="card bg-blue-400 md:w-60 shadow-xl">
+            <div class="card bg-blue-400 md:w-60 shadow-sm">
               <div class="card-body">
                 <icon>
                   <img src="./assets/budget-planning.png" alt="" class="">
@@ -232,6 +241,35 @@
         </div>
        </section>
       <!--! Our Works Process ends  -->
+      <!-- Our Latest Portfolio start  -->
+       <section class="bg-base-200 2xl:container mx-auto py-4 md:py-8">
+
+       </section>
+      <!--! Our Latest Portfolio ends  -->
+      <!-- Let’s Discuss Next Project start -->
+      <section class="bg-base-200 2xl:container mx-auto py-4 md:py-8 bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
+        <!-- container  -->
+         <div class="container mx-auto">
+          <!-- text container  -->
+           <div class=" flex flex-col justify-center gap-2 
+           container mx-auto">
+            <button class="btn shadow-2xl bg-lime-100 btn-sm rounded-2xl mx-auto "><span><i class="fa-solid fa-arrow-right"></i></span>Let’s Connect</button>
+            <h1 class="text-3xl md:text-4xl font-black text-center w-4/5 md:w-full mx-auto">
+              Let’s Discuss Next Project</h1>
+              <p class="text-sm text-pera-text w-3/4 text-center mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, <br class="hidden lg:block"> featuring weathered wood, sleek metal accents.</p>
+           </div>
+           <!-- input container  -->
+            <div class="= container mx-auto max-w-screen-xl grid grid-cols-1 md:grid-cols-2 grid-rows-6 place-content-center gap-4 md: gap-6 lg:gap-8 my-5 md:my-8">
+               <input type="text" class="input" placeholder="First Name*">
+               <input type="text" class="input" placeholder="Last Name*">
+               <input type="text" class="input" placeholder="Phone Number*">
+               <input type="email" class="input" placeholder="Email Number*" required >
+               <textarea class="textarea col-span-2 row-span-3" placeholder="Write your message here" spellcheck="true" contenteditable="true"></textarea>
+               <button class="btn col-span-2 font-bold text-lg bg-lime-400">Send Mail<span class="w-8 h-8 rounded-full bg-black text-white -rotate-45 flex justify-center items-center"><i class="fa-solid fa-arrow-right "></i></span></button>
+            </div>
+         </div>
+      </section>
+      <!--! Let’s Discuss Next Project ends -->
 
 
     </main>
