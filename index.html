@@ -48,7 +48,7 @@
               <!-- dropdown  -->
             <div class="dropdown lg:hidden">
               <div tabindex="0" role="button" class="btn btn-ghost order-2  lg:hidden ">
-                <span class="bg-white rounded-full w-12 h-12 flex justify-center items-center text-xl border-2  shadow-sm"><i class="fa-solid fa-bars"></i></span>
+                <span class="bg-white rounded-full w-12 h-12 flex justify-center items-center text-xl border-2  shadow-md"><i class="fa-solid fa-bars"></i></span>
               </div>
               <ul
                 tabindex="0"
@@ -119,9 +119,12 @@
           </div>
           <br>
           <div class="hero-content flex-col-reverse lg:flex-row-reverse">
-            <img
+           <!-- img container -->
+            <div class=" w-full h-72 md:h-auto md:max-w-sm bg-[url('./assets/Rectangle.png')] bg-no-repeat bg-center bg-cover rounded-3xl"> 
+               <img
               src="./assets/Rectangle.png"
-              class="max-w-sm rounded-lg shadow-2xl" />
+              class="w-full md:max-w-sm rounded-lg shadow-2xl hidden md:block" />
+            </div>
             <div>
               <!-- btn wraper for sm decive  -->
                <div class="w-fit mx-auto  lg:mx-0">
